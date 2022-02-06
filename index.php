@@ -19,7 +19,7 @@
             <div class="wizard_top">
                 <img src="assets/img/barra-disc.png" alt="">
             </div>
-            <div class="wizard_text">
+            <div class="wizard_text" style="display: none;">
                 <header class="header_wizard_text">
                     <h3 class="wizard_title">Você está pronta(o) para conhecer seu perfil comportamental predominante?</h3>
                 </header>
@@ -38,10 +38,70 @@
                         <button class="btn_wizard" id="btn_wizard">Carregando...</button>
                     </div>
                 </div>
+                
             </div>
+            <form action="" method="" class="f_ask">
+                <div class="content_ask">
+                    <div class="ask_top">
+                        <p class="title_ask">Por qual motivo você está fazendo o teste DISC?</p>
+                    </div>
+                    <div class="wizard_start">
+                        <p>
+                            <label for="">
+                                <input type="radio" name="pesquisa" id="pesquisa" class="pesquisa">
+                                Participando de um processo de seleção.
+                            </label>
+                        </p>
+                        <p>
+                            <label for="">
+                                <input type="radio" name="pesquisa" id="pesquisa" class="pesquisa">
+                                Pedido da empresa em que trabalho
+                            </label>
+                        </p>
+                        <p>
+                            <label for="">
+                                <input type="radio" name="pesquisa" id="pesquisa" class="pesquisa">
+                                Aumentar seu autoconhecimento.
+                            </label>
+                        </p>
+                        <p>
+                            <label for="">
+                                <input type="radio" name="pesquisa" id="pesquisa" class="pesquisa">
+                                Apenas Curiosidade
+                            </label>
+                        </p>
+                    </div>
+                    <div class="ask_bottom">
+                        <button class="continue_test" id="continue_test">Continuar para o teste</button>
+                    </div>
+                </div>
+                
+            </form>
         </div>
-        <div>
-            <img src="" alt="">
+
+        <div class="social_share_box">
+            <ul>
+                <li class="share_top">
+                    <p class="num_share">10k</p>
+                    <p class="share_text">Partilhas</p>
+                </li>
+                <li class="share share_facebook">
+                    <img src="./assets/img/icons/facebook.svg" alt="">
+                    <span class="s share_not_facebook">Partilhar</span>
+                </li>
+                <li class="share share_twitter">
+                    <img src="./assets/img/icons/twitter.svg" alt="">
+                    <span class="s share_not_twitter">Partilhar</span>
+                </li>
+                <li class="share share_linkedin">
+                    <img src="./assets/img/icons/linkedin.svg" alt="">
+                    <span class="s share_not_linkedin">Partilhar</span>
+                </li>
+                <li class="share share_link">
+                    <img src="./assets/img/icons/share.svg" alt="">
+                    <span class="s share_not_share">Partilhar</span>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -50,6 +110,8 @@
             <span>Partilhar</span>
         </div>
     </div>
+
+    <script src="./assets/js/script.js"></script>
 
 </body>
 </html>

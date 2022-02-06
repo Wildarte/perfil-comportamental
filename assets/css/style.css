@@ -97,3 +97,195 @@ header.header_top_area{
     border: none;
     border-radius: 3px;
 }
+.wizard_action .btn_wizard:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+.social_share_box{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    box-shadow: 1px 1px 5px #000;
+    z-index: 10;
+}
+.share_top{
+    display: block;
+    background-color: #fff;
+    color: #333;
+    padding: 2px;
+}
+.num_share{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+.share_text{
+    font-size: .8em;
+}
+.social_share_box ul li.share{
+    display: flex;
+    padding: 15px;
+    position: relative;
+}
+.social_share_box ul li.share:hover{
+    cursor: pointer;
+}
+.s{
+    display: none;
+}
+.social_share_box ul li img{
+    width: 20px;
+    margin: auto;
+}
+
+.share_facebook{
+    background-color: #3b5998;
+}
+.share_twitter{
+    background-color: #00acee;
+}
+.share_linkedin{
+    background-color: #0072b1;
+}
+.share_link{
+    background-color: #33cc33;
+}
+
+.social_share_box ul li.share span.s{
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    padding-right: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    vertical-align: middle;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+}
+.social_share_box ul li.share .share_not_facebook{
+    background-color: #3b5998;
+}
+.social_share_box ul li.share .share_not_twitter{
+    background-color: #00acee;
+}
+.social_share_box ul li.share .share_not_linkedin{
+    background-color: #3276B1;
+}
+.social_share_box ul li.share .share_not_share{
+    background-color: #33cc33;
+}
+.openShare{
+    animation: openShare .3s forwards;
+}
+.closeShare{
+    animation: closeShare .3s forwards;
+}
+@keyframes openShare{
+    from{
+        opacity: 0;
+        left: 30%;
+    }
+    to{
+        opacity: 1;
+        left: 100%;
+    }
+}
+@keyframes closeShare{
+    from{
+        opacity: 1;
+        left: 100%;
+    }
+    to{
+        opacity: 0;
+        left: 30%;
+    }
+}
+
+
+.content_ask{
+    padding: 10px 10px 40px;
+}
+.title_ask{
+    font-size: 1.8em;
+    margin: 20px;
+    padding: 20px;
+    color: #333;
+    text-align: center;
+}
+.wizard_start{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wizard_start p{
+    flex-basis: calc(50% - 80px);
+    margin: 20px;
+}
+.ask_bottom{
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+}
+.ask_bottom button.continue_test{
+    padding: 12px 20px;
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #3276B1;
+    border: none;
+    border-radius: 3px;
+}
+.ask_bottom button.continue_test:hover{
+    cursor: pointer;
+    opacity: .9;
+}
+
+@media (max-width: 768px){
+    .header_title{
+        font-size: 2em;
+    }
+    .header_subtitle{
+        font-size: 1.4em;
+    }
+    .wizard_text{
+        padding: 20px;
+    }
+    .header_wizard_text .wizard_title{
+        font-size: 1.6em;
+    }
+    .wizard_body{
+        padding: 10px;
+    }
+    .wizard_tips{
+        flex-basis: 100%;
+    }
+    .wizard_action{
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 420px){
+    header.header_top_area{
+        padding: 20px;
+    }
+    .social_share_box ul li.share{
+        padding: 8px;
+    }
+    .social_share_box ul li img{
+        width: 12px;
+    }
+    .share_text{
+        font-size: .6em;
+    }
+    .header_wizard_text .wizard_title{
+        font-size: 1.4em;
+    }
+    .header_title{
+        margin: 30px 0 10px 0;
+    }
+}
