@@ -19,7 +19,7 @@
             <div class="wizard_top">
                 <img src="assets/img/barra-disc.png" alt="">
             </div>
-            <div class="wizard_text" style="display: none;">
+            <div class="wizard_text" style="display: none">
                 <header class="header_wizard_text">
                     <h3 class="wizard_title">Você está pronta(o) para conhecer seu perfil comportamental predominante?</h3>
                 </header>
@@ -40,8 +40,8 @@
                 </div>
                 
             </div>
-            <form action="" method="" class="f_ask">
-                <div class="content_ask">
+            <form action="" method="" class="f_ask show">
+                <div class="content_ask hidden">
                     <div class="ask_top">
                         <p class="title_ask">Por qual motivo você está fazendo o teste DISC?</p>
                     </div>
@@ -76,6 +76,36 @@
                     </div>
                 </div>
                 
+
+                <div class="box_test show">
+                    <div class="box_top">
+                        <h4 class="box_test_title">Selecione o adjetivo que melhor descreve você!</h4>
+                        <p class="box_test_subtitle">(Mesmo que você se identifique com mais de um, escolha o que mais se encaixa)</p>
+                    </div>
+                    <div class="box_resps">
+                        <ul class="resps">
+                            <li>
+                                <button>Sociável</button>
+                            </li>
+                            <li>
+                                <button>atencioso</button>
+                            </li>
+                            <li>
+                                <button>Controlado</button>
+                            </li>
+                            <li>
+                                <button>Energético</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box_bar">
+                        <div class="bar_progress">
+                            <?php $width = 100/40; ?>
+                            <div class="progress" id="progress" style="width: <?= $width ?>%"><span id="val_point">1</span>/<span id="max_progress">40</span></div>
+                        </div>
+                    </div>
+                    <button id="test">Test</button>
+                </div>
             </form>
         </div>
 
@@ -112,6 +142,7 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script>controllBar(<?= $width; ?>);</script>
 
 </body>
 </html>

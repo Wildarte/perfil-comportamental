@@ -226,9 +226,10 @@ header.header_top_area{
     margin: 20px;
 }
 .ask_bottom{
-    width: 100%;
+    max-width: 100%;
     text-align: right;
     padding: 20px;
+    margin: 20px;
 }
 .ask_bottom button.continue_test{
     padding: 12px 20px;
@@ -245,6 +246,78 @@ header.header_top_area{
     opacity: .9;
 }
 
+.box_test{
+    display: none;
+}
+
+.box_test_title{
+    margin: 20px 20px 5px;
+    padding: 20px 20px 0;
+    font-size: 2em;
+    font-weight: 300;
+    color: #222;
+    text-align: center;
+}
+.box_test_subtitle{
+    font-size: 1em;
+    padding: 20px;
+    text-align: center;
+}
+.box_resps{
+    display: block;
+    padding: 40px;
+}
+ul.resps{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+ul.resps li button{
+    padding: 8px 30px;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: 200;
+    border: 1px solid #333;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+ul.resps li button:hover{
+    cursor: pointer;
+    box-shadow: inset 1px 1px 8px #111;
+    transition: all .23s;
+}
+.box_bar{
+    width: 100%;
+    padding: 20px 40px;
+}
+.bar_progress{
+    height: 20px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    background-color: #bbb;
+}
+.progress{
+    background-color: tomato;
+    text-align: center;
+    padding: 5px;
+    font-size: .9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.f_ask{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
 @media (max-width: 768px){
     .header_title{
         font-size: 2em;
